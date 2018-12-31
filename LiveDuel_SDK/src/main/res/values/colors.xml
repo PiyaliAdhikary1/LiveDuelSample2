@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#420039</color>
+    <color name="text">#ffffff</color>
+    <color name="navbar.background">#12355B</color>
+    <color name="navbar.text">#ffffff</color>
+    <color name="system.background">#fafaff</color>
+    <color name="system.text">#000000</color>
+    <color name="system.button.background">#D72638</color>
+    <color name="system.button.text">#ffffff</color>
+    <color name="login.button.background">#1affffff</color>
+    <color name="login.button.text">#ffffff</color>
+    <color name="home.watch.background">#D72638</color>
+    <color name="home.watch.text">#ffffff</color>
+    <color name="home.heart">#FF570A</color>
+    <color name="lives.icon">#FF570A</color>
+    <color name="cashout.icon">#12355B</color>
+    <color name="chat.username">#FF570A</color>
+    <color name="chat.text">#ffffff</color>
+    <color name="winners.share.background">#FF570A</color>
+    <color name="winners.share.text">#ffffff</color>
+    <color name="answer.correct">#a1e8af</color>
+    <color name="answer.wrong">#e8b0a1</color>
+    <color name="answer.neutral">#cccccc</color>
+    <color name="answer.highlight">#12355B</color>
+    <color name="show.warning">#D72638</color>
+    <color name="show.success">#38a643</color>
+    <color name="show.overlay">#bf000000</color>
+</resources>

@@ -1,0 +1,88 @@
+apply plugin: 'com.android.library'
+//"package_name": "com.liveduel.trivia"
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        //applicationId "com.liveduel.trivia"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        innerTest {
+            //...
+            matchingFallbacks = ['release']
+        }
+    }
+    splits {
+
+        // Configures multiple APKs based on ABI.
+        abi {
+
+            // Enables building multiple APKs per ABI.
+            enable true
+
+            // By default all ABIs are included, so use reset() and include to specify that we only
+            // want APKs for x86 and armeabi-v7a.
+
+            // Resets the list of ABIs that Gradle should create APKs for to none.
+            reset()
+
+            // Specifies a list of ABIs that Gradle should create APKs for.
+            include "x86", "armeabi-v7a"
+
+            // Specifies that we do not want to also generate a universal APK that includes all ABIs.
+            universalApk false
+        }
+    }
+
+    // map for the version code
+    project.ext.versionCodes = ['armeabi': 1, 'armeabi-v7a': 2, 'arm64-v8a': 3, 'mips': 5, 'mips64': 6, 'x86': 8, 'x86_64': 9]
+
+
+    //android.applicationVariants.all
+    /*android.libraryVariants.all { variant ->
+        // assign different version code for each output
+        variant.outputs.each { output ->
+            output.versionCodeOverride =
+                    project.ext.versionCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0) * 1000000 + android.defaultConfig.versionCode
+        }
+    }*/
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    implementation 'com.facebook.android:facebook-login:[4,5)'
+    implementation 'com.hbb20:ccp:2.1.2'
+    implementation 'com.amitshekhar.android:android-networking:1.0.1'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation project(':CircleProgresslibrary')
+    //implementation 'com.github.lzyzsd:circleprogress:1.2.1'
+    implementation 'de.mrmaffen:libvlc-android:2.1.12@aar'
+
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:3.10.0"
+    implementation "com.squareup.okhttp3:okhttp:3.10.0"
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation('io.socket:socket.io-client:0.8.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+
+//apply plugin: 'com.google.gms.google-services'

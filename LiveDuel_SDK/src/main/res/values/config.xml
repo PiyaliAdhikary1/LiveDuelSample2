@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveDuel</string>
+    <string name="app.host">http://54.202.198.121</string>
+    <string name="app.currencySymbol">$</string>
+    <string name="settings.answer_time">10</string>
+    <string name="settings.winners_time">10</string>
+    <string name="video.width">360</string>
+    <string name="video.height">640</string>
+    <string name="shared.key">com.uniprogy.outquiz.SHARED</string>
+    <string name="facebook_app_id">178868812814618</string>
+    <string name="fb_login_protocol_scheme">fb178868812814618</string>
+</resources>

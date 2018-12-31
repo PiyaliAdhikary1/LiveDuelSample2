@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "416169206328",
+    "firebase_url": "https://liveduel-f1c89.firebaseio.com",
+    "project_id": "liveduel-f1c89",
+    "storage_bucket": "liveduel-f1c89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416169206328:android:6ca9a65162ea338f",
+        "android_client_info": {
+          "package_name": "com.uniprogy.outquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416169206328-he63gg6etno063ogsllq2skfnacul5rh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0VgaLb2xRerE8i_aLKHW7WcjzDvehNnE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
