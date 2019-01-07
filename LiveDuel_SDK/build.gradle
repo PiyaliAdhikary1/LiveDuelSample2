@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
 //"package_name": "com.liveduel.trivia"
+apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.PiyaliAdhikary1'
 
 android {
     compileSdkVersion 27
